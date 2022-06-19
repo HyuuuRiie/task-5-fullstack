@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 19, 2022 at 09:43 AM
+-- Generation Time: Jun 19, 2022 at 10:04 AM
 -- Server version: 10.1.28-MariaDB
 -- PHP Version: 7.1.11
 
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `db_creator`
+-- Database: `db_berita`
 --
 
 -- --------------------------------------------------------
@@ -52,11 +52,11 @@ CREATE TABLE `authors` (
 --
 
 INSERT INTO `authors` (`id`, `name`, `created_at`, `updated_at`) VALUES
-(1, 'Emma Nader', '2022-06-16 23:45:01', '2022-06-16 23:45:01'),
-(2, 'Betty Mitchell', '2022-06-16 23:45:01', '2022-06-16 23:45:01'),
-(3, 'Nicola Barrows', '2022-06-16 23:45:01', '2022-06-16 23:45:01'),
-(4, 'Prof. Leif Grant IV', '2022-06-16 23:45:01', '2022-06-16 23:45:01'),
-(5, 'Serena Jaskolski', '2022-06-16 23:45:01', '2022-06-16 23:45:01');
+(1, 'Ms. Meda Kreiger DDS', '2022-06-18 00:42:33', '2022-06-18 00:42:33'),
+(2, 'Prof. Rosalind Baumbach', '2022-06-18 00:42:33', '2022-06-18 00:42:33'),
+(3, 'Prof. Darryl Powlowski PhD', '2022-06-18 00:42:33', '2022-06-18 00:42:33'),
+(4, 'Dr. Regan Beer Sr.', '2022-06-18 00:42:33', '2022-06-18 00:42:33'),
+(5, 'Wiley Kunde', '2022-06-18 00:42:33', '2022-06-18 00:42:33');
 
 -- --------------------------------------------------------
 
@@ -76,11 +76,11 @@ CREATE TABLE `categories` (
 --
 
 INSERT INTO `categories` (`id`, `name`, `created_at`, `updated_at`) VALUES
-(1, 'Aliquam eos aliquid qui commodi nostrum. Eos ullam vel voluptate. Ratione rem eos recusandae facilis ut dolores.', '2022-06-17 00:25:10', '2022-06-17 00:25:10'),
-(2, 'Quidem soluta distinctio tenetur rerum consequuntur animi a quo. Vitae dolore placeat eum exercitationem. Quis quia facilis expedita dolore.', '2022-06-17 00:25:10', '2022-06-17 00:25:10'),
-(3, 'Eum minus ut laborum consequatur quam facilis. Itaque id aperiam veniam ducimus modi.', '2022-06-17 00:25:10', '2022-06-17 00:25:10'),
-(4, 'Rerum voluptatem aut eveniet non adipisci. Sapiente exercitationem earum delectus ut. Voluptatem quos ut debitis enim in eveniet.', '2022-06-17 00:25:10', '2022-06-17 00:25:10'),
-(5, 'Fugit debitis quia et id repudiandae accusamus. Est soluta vel eius facilis et explicabo. Quia architecto deserunt ad inventore quaerat sunt. Ut sit et voluptatem optio repellat consectetur.', '2022-06-17 00:25:10', '2022-06-17 00:25:10');
+(1, 'Saepe aut in sit quam et. Ut sed provident quidem illo tempora. Sit odio tenetur quod aut.', '2022-06-18 00:52:45', '2022-06-18 00:52:45'),
+(2, 'Ex ratione voluptas rerum quis atque consequatur laboriosam voluptatem. Minima aut ut sint quidem assumenda magni. Rerum deleniti vero quis consequuntur iure aliquid.', '2022-06-18 00:52:45', '2022-06-18 00:52:45'),
+(3, 'Nisi aut esse quo qui in. Ullam a in ducimus ea iusto. Ipsam ut repudiandae nemo incidunt aperiam minus.', '2022-06-18 00:52:45', '2022-06-18 00:52:45'),
+(4, 'Labore consequatur vel ut tempora. Voluptatibus voluptatem qui nesciunt qui ut rerum cumque. Qui temporibus nisi veritatis nihil consequatur esse. Beatae laudantium culpa natus dolores.', '2022-06-18 00:52:45', '2022-06-18 00:52:45'),
+(5, 'Minus minima aliquam reiciendis iusto dignissimos. Incidunt laborum sint eaque sint. Necessitatibus natus quis quidem ut molestiae. Totam vero beatae illum saepe rerum.', '2022-06-18 00:54:07', '2022-06-18 00:54:07');
 
 -- --------------------------------------------------------
 
@@ -119,13 +119,17 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (2, '2014_10_12_100000_create_password_resets_table', 1),
 (3, '2019_08_19_000000_create_failed_jobs_table', 1),
 (4, '2019_12_14_000001_create_personal_access_tokens_table', 1),
-(6, '2022_06_16_085311_create_articles_table', 1),
-(7, '2022_06_16_090811_add_image_field_to_posts_table', 2),
-(8, '2022_06_17_063306_create_authors_table', 3),
-(9, '2022_06_17_063450_create_profiles_table', 3),
-(10, '2022_06_17_070416_create_categories_table', 4),
-(11, '2022_06_17_084210_create_posts_table', 5),
-(12, '2022_06_17_095845_create_tags_table', 6);
+(5, '2022_06_18_071818_create_posts_table', 1),
+(6, '2022_06_18_071939_create_articles_table', 1),
+(7, '2022_06_18_072925_add_image_field_to_posts_table', 1),
+(8, '2022_06_18_073657_create_authors_table', 2),
+(9, '2022_06_18_073707_create_profiles_table', 2),
+(10, '2022_06_18_074639_create_categories_table', 3),
+(11, '2022_06_18_084244_create_tags_table', 4),
+(12, '2022_06_18_084840_create_tags_table', 5),
+(13, '2022_06_18_085631_create_post_tags_table', 6),
+(14, '2022_06_18_090202_create_post_tags_table', 7),
+(15, '2022_06_18_095736_create_tags_table', 8);
 
 -- --------------------------------------------------------
 
@@ -165,25 +169,47 @@ CREATE TABLE `personal_access_tokens` (
 
 CREATE TABLE `posts` (
   `id` bigint(20) UNSIGNED NOT NULL,
+  `category_id` bigint(20) UNSIGNED NOT NULL,
   `title` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
   `content` text COLLATE utf8mb4_unicode_ci NOT NULL,
-  `image` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `status` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `category_id` bigint(20) UNSIGNED NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT NULL
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `image` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data for table `posts`
 --
 
-INSERT INTO `posts` (`id`, `title`, `content`, `image`, `status`, `category_id`, `created_at`, `updated_at`) VALUES
-(1, 'Miss', 'Dolorum nobis quae enim beatae et est vel animi. Est dolorem nihil est unde illo commodi et. Libero ex alias consequatur saepe quia assumenda.', 'https://via.placeholder.com/200x200.png/006688?text=ratione', 'active', 3, '2022-06-17 01:58:17', '2022-06-17 01:58:17'),
-(2, 'Dr.', 'Ex laudantium veritatis officiis quaerat. Nemo ipsam quia est. Voluptatem repellendus et sunt ut esse qui.', 'https://via.placeholder.com/200x200.png/004400?text=ab', 'inactive', 4, '2022-06-17 01:58:17', '2022-06-17 01:58:17'),
-(3, 'Miss', 'Aspernatur sit unde at aliquid est quis nobis. Doloribus commodi facere dicta mollitia. Et nemo id optio eos dolorem a maiores. Aliquam est blanditiis dicta odio.', 'https://via.placeholder.com/200x200.png/002288?text=fugiat', 'inactive', 2, '2022-06-17 01:58:17', '2022-06-17 01:58:17'),
-(4, 'Mrs.', 'Explicabo voluptas non et ea facere accusantium porro. Libero in consequatur eveniet et saepe qui non. Rerum ut molestiae error atque explicabo occaecati.', 'https://via.placeholder.com/200x200.png/008899?text=rem', 'inactive', 1, '2022-06-17 01:58:17', '2022-06-17 01:58:17'),
-(5, 'Prof.', 'Fugiat aperiam rerum quia aut et cupiditate. Nostrum necessitatibus doloribus perspiciatis a delectus voluptatum quis. Omnis officiis cupiditate ex excepturi harum.', 'https://via.placeholder.com/200x200.png/00ee99?text=sapiente', 'inactive', 5, '2022-06-17 01:58:17', '2022-06-17 01:58:17');
+INSERT INTO `posts` (`id`, `category_id`, `title`, `content`, `status`, `created_at`, `updated_at`, `image`) VALUES
+(1, 1, 'Dr.', 'Sit cum dolor ut occaecati labore. Et exercitationem architecto vitae sint. Qui reprehenderit quod eveniet quisquam incidunt asperiores. Quis sunt ipsum voluptatem autem qui commodi.', 'active', '2022-06-18 01:06:34', '2022-06-18 01:06:34', 'https://via.placeholder.com/200x200.png/007744?text=sapiente'),
+(2, 2, 'Miss', 'Sed saepe possimus omnis ut. Accusantium optio sed aut dolor ullam et laudantium. Nostrum aut est animi a. Nesciunt numquam esse sed.', 'inactive', '2022-06-18 01:06:34', '2022-06-18 01:06:34', 'https://via.placeholder.com/200x200.png/0033bb?text=et'),
+(3, 5, 'Prof.', 'Quidem sit itaque expedita saepe consectetur facere. Omnis quam repudiandae eos quis corporis quo et. Et est tempora alias non dicta. Assumenda eius voluptas ut deserunt accusantium voluptatibus aut.', 'active', '2022-06-18 01:06:34', '2022-06-18 01:06:34', 'https://via.placeholder.com/200x200.png/00aaff?text=doloribus'),
+(4, 4, 'Dr.', 'Provident voluptatem hic veniam velit. Harum iusto sit assumenda aut corrupti commodi. Quod ipsa et vel quia molestiae.', 'active', '2022-06-18 01:06:34', '2022-06-18 01:06:34', 'https://via.placeholder.com/200x200.png/009922?text=consequatur'),
+(5, 3, 'Ms.', 'Perspiciatis voluptas facilis accusantium nulla. Dolorum nihil et sit atque consequatur. Nemo quisquam velit itaque porro aperiam consectetur.', 'active', '2022-06-18 01:06:34', '2022-06-18 01:06:34', 'https://via.placeholder.com/200x200.png/00ff77?text=quia');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `post_tag`
+--
+
+CREATE TABLE `post_tag` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `post_id` bigint(20) UNSIGNED NOT NULL,
+  `tag_id` bigint(20) UNSIGNED NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `post_tag`
+--
+
+INSERT INTO `post_tag` (`id`, `post_id`, `tag_id`) VALUES
+(9, 1, 2),
+(10, 4, 1),
+(11, 2, 3),
+(12, 5, 4);
 
 -- --------------------------------------------------------
 
@@ -203,11 +229,11 @@ CREATE TABLE `profiles` (
 --
 
 INSERT INTO `profiles` (`id`, `author_id`, `created_at`, `updated_at`) VALUES
-(1, 4, '2022-06-16 23:52:22', '2022-06-16 23:52:22'),
-(2, 1, '2022-06-16 23:52:22', '2022-06-16 23:52:22'),
-(3, 5, '2022-06-16 23:52:22', '2022-06-16 23:52:22'),
-(4, 2, '2022-06-16 23:52:22', '2022-06-16 23:52:22'),
-(5, 3, '2022-06-16 23:52:22', '2022-06-16 23:52:22');
+(1, 4, '2022-06-18 00:44:39', '2022-06-18 00:44:39'),
+(2, 5, '2022-06-18 00:44:39', '2022-06-18 00:44:39'),
+(3, 1, '2022-06-18 00:44:39', '2022-06-18 00:44:39'),
+(4, 3, '2022-06-18 00:44:39', '2022-06-18 00:44:39'),
+(5, 2, '2022-06-18 00:44:39', '2022-06-18 00:44:39');
 
 -- --------------------------------------------------------
 
@@ -216,8 +242,8 @@ INSERT INTO `profiles` (`id`, `author_id`, `created_at`, `updated_at`) VALUES
 --
 
 CREATE TABLE `tags` (
-  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `id` bigint(20) UNSIGNED NOT NULL,
+  `name` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -226,12 +252,12 @@ CREATE TABLE `tags` (
 -- Dumping data for table `tags`
 --
 
-INSERT INTO `tags` (`name`, `id`, `created_at`, `updated_at`) VALUES
-('Nulla dolorem illo facilis et nihil dolores.', 1, '2022-06-17 03:06:28', '2022-06-17 03:06:28'),
-('Ab dicta praesentium voluptatem quas reprehenderit voluptate.', 2, '2022-06-17 03:06:28', '2022-06-17 03:06:28'),
-('Consequuntur sed expedita ut tempora.', 3, '2022-06-17 03:06:28', '2022-06-17 03:06:28'),
-('Dolorem temporibus necessitatibus omnis enim laborum quisquam.', 4, '2022-06-17 03:06:28', '2022-06-17 03:06:28'),
-('Non magni numquam fugiat aut.', 5, '2022-06-17 03:06:28', '2022-06-17 03:06:28');
+INSERT INTO `tags` (`id`, `name`, `created_at`, `updated_at`) VALUES
+(1, 'Cumque omnis sed architecto sunt non sunt.', '2022-06-18 02:59:11', '2022-06-18 02:59:11'),
+(2, 'Animi nam magnam sit quis nostrum.', '2022-06-18 02:59:11', '2022-06-18 02:59:11'),
+(3, 'Officia explicabo repellat numquam optio distinctio suscipit.', '2022-06-18 02:59:11', '2022-06-18 02:59:11'),
+(4, 'Sint numquam eaque a rerum.', '2022-06-18 02:59:12', '2022-06-18 02:59:12'),
+(5, 'Vitae dicta sit tenetur exercitationem corrupti adipisci.', '2022-06-18 02:59:12', '2022-06-18 02:59:12');
 
 -- --------------------------------------------------------
 
@@ -304,7 +330,15 @@ ALTER TABLE `personal_access_tokens`
 --
 ALTER TABLE `posts`
   ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `posts_category_id_unique` (`category_id`);
+  ADD UNIQUE KEY `posts_category_id_unique` (`category_id`) USING BTREE;
+
+--
+-- Indexes for table `post_tag`
+--
+ALTER TABLE `post_tag`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `post_id` (`post_id`),
+  ADD UNIQUE KEY `tag_id` (`tag_id`);
 
 --
 -- Indexes for table `profiles`
@@ -358,7 +392,7 @@ ALTER TABLE `failed_jobs`
 -- AUTO_INCREMENT for table `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `personal_access_tokens`
@@ -371,6 +405,12 @@ ALTER TABLE `personal_access_tokens`
 --
 ALTER TABLE `posts`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- AUTO_INCREMENT for table `post_tag`
+--
+ALTER TABLE `post_tag`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `profiles`
@@ -398,7 +438,14 @@ ALTER TABLE `users`
 -- Constraints for table `posts`
 --
 ALTER TABLE `posts`
-  ADD CONSTRAINT `posts_category_id_foreign` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`);
+  ADD CONSTRAINT `posts_author_id_foreign` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`);
+
+--
+-- Constraints for table `post_tag`
+--
+ALTER TABLE `post_tag`
+  ADD CONSTRAINT `post_tag_post_id_foreign` FOREIGN KEY (`post_id`) REFERENCES `posts` (`id`),
+  ADD CONSTRAINT `post_tag_tag_id_foreign` FOREIGN KEY (`tag_id`) REFERENCES `tags` (`id`);
 
 --
 -- Constraints for table `profiles`
